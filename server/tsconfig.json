@@ -21,9 +21,9 @@
             "@domain/*": ["domain/*"],
             "@infra/*": ["infra/*"],
             "@vars/*": ["config/variables/*"],
-            "@test/*": ["tests/*"],
+            "@test/*": ["src/tests/*"],
         }
     },
-    "include": ["src"],
+    "include": ["src", "src/tests"],
     "exclude": ["node_modules", "scripts"]
 }

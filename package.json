@@ -1,0 +1,19 @@
+{
+  "name": "beamup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm:server:dev\" \"npm:presenter:dev\" \"npm:operator:dev\" \"npm:electron:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "presenter:dev": "cd presenter-web && npm run dev -- --port 5173",
+    "operator:dev": "cd operator-ui && npm run dev -- --port 5174",
+    "electron:dev": "cd electron-main && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
